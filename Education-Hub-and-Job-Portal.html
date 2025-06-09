@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Vacancies - Education Resources & Job Portal</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#f59e0b',secondary:'#3b82f6'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style> :where([class^="ri-"])::before { content: "\f3c2"; } </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+<!-- Social Media Strip -->
+<div class="bg-primary text-white py-2 px-4">
+<div class="container mx-auto flex justify-between items-center">
+<div class="text-sm">June 8, 2025 | Connect with us:</div>
+<div class="flex space-x-4">
+<a href="https://whatsapp.com/channel/0029Vau1AdBAYlULN2WqYK24" class="w-6 h-6 flex items-center justify-center hover:text-gray-200 transition">
+<i class="ri-whatsapp-line"></i>
+</a>
+<a href="https://www.linkedin.com/groups/10046899" class="w-6 h-6 flex items-center justify-center hover:text-gray-200 transition">
+<i class="ri-linkedin-line"></i>
+</a>
+<a href="https://www.facebook.com/profile.php?id=61567494475651" class="w-6 h-6 flex items-center justify-center hover:text-gray-200 transition">
+<i class="ri-facebook-line"></i>
+</a>
+</div>
+</div>
+</div>
+<!-- Header -->
+<header class="bg-white shadow-sm">
+<div class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+<div class="flex items-center mb-4 md:mb-0">
+<div class="mr-2 w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+<i class="ri-graduation-cap-fill text-white text-xl"></i>
+</div>
+<h1 class="text-2xl font-['Pacifico'] text-gray-800">Daily Vacancies</h1>
+</div>
+<div class="w-full md:w-auto flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4">
+<div class="relative w-full md:w-64">
+<input type="text" placeholder="Search jobs, books, resources..." class="w-full pl-10 pr-4 py-2 rounded border-none ring-1 ring-gray-300 focus:ring-primary focus:outline-none text-sm">
+<div class="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 flex items-center justify-center text-gray-400">
+<i class="ri-search-line"></i>
+</div>
+</div>
+<div class="flex space-x-2">
+<button class="bg-white text-gray-700 border border-gray-300 px-4 py-2 rounded-button text-sm font-medium hover:bg-gray-50 whitespace-nowrap">Sign In</button>
+<button class="bg-primary text-white px-4 py-2 rounded-button text-sm font-medium hover:bg-primary/90 whitespace-nowrap">Register</button>
+<button id="sponsorBtn" class="bg-secondary text-white px-4 py-2 rounded-button text-sm font-medium hover:bg-secondary/90 whitespace-nowrap flex items-center">
+<i class="ri-heart-fill mr-2"></i>
+Sponsor
+</button>
+</div>
+</div>
+</div>
+</header>
+<!-- Navigation -->
+<nav class="bg-white shadow-sm sticky top-0 z-10">
+<div class="container mx-auto">
+<ul class="flex overflow-x-auto hide-scrollbar">
+<li class="py-3 px-4 font-medium text-primary border-b-2 border-primary">
+<a href="#" class="flex items-center whitespace-nowrap">
+<span class="w-5 h-5 mr-2 flex items-center justify-center"><i class="ri-briefcase-line"></i></span>
+Jobs
+</a>
+</li>
+<li class="py-3 px-4 font-medium text-gray-600 hover:text-primary">
+<a href="#" class="flex items-center whitespace-nowrap">
+<span class="w-5 h-5 mr-2 flex items-center justify-center"><i class="ri-book-open-line"></i></span>
+Education
+</a>
+</li>
+<li class="py-3 px-4 font-medium text-gray-600 hover:text-primary">
+<a href="#" class="flex items-center whitespace-nowrap">
+<span class="w-5 h-5 mr-2 flex items-center justify-center"><i class="ri-file-list-3-line"></i></span>
+Resources
+</a>
+</li>
+<li class="py-3 px-4 font-medium text-gray-600 hover:text-primary">
+<a href="#" class="flex items-center whitespace-nowrap">
+<span class="w-5 h-5 mr-2 flex items-center justify-center"><i class="ri-compass-line"></i></span>
+Career Guide
+</a>
+</li>
+<li class="py-3 px-4 font-medium text-gray-600 hover:text-primary">
+<a href="#" class="flex items-center whitespace-nowrap">
+<span class="w-5 h-5 mr-2 flex items-center justify-center"><i class="ri-user-settings-line"></i></span>
+My Account
+</a>
+</li>
+</ul>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative">
+<div style="background-image: url('https://readdy.ai/api/search-image?query=Professional%2520education%2520and%2520career%2520background%2520with%2520soft%2520gradient%2520colors%2520showing%2520students%2520and%2520professionals%2520in%2520a%2520modern%2520learning%2520environment%2520with%2520books%2520and%2520digital%2520devices%252C%2520clean%2520minimalist%2520style%2520with%2520soft%2520yellow%2520and%2520blue%2520accents&width=1280&height=400&seq=123456&orientation=landscape');" class="bg-cover bg-center h-80">
+<div class="absolute inset-0 bg-black bg-opacity-40"></div>
+<div class="container mx-auto px-4 h-full flex items-center relative z-10">
+<div class="max-w-2xl text-white">
+<h1 class="text-3xl md:text-4xl font-bold mb-4">Find Your Perfect Career Path</h1>
+<p class="text-lg mb-6">Access educational resources, job listings, and career guidance all in one place.</p>
+<div class="flex flex-wrap gap-3">
+<button class="bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-primary/90 whitespace-nowrap">
+<span class="flex items-center">
+<i class="ri-search-line mr-2"></i>
+Find Jobs
+</span>
+</button>
+<button class="bg-white text-gray-800 px-6 py-3 rounded-button font-medium hover:bg-gray-100 whitespace-nowrap">
+<span class="flex items-center">
+<i class="ri-download-line mr-2"></i>
+Download Resources
+</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Content -->
+<main class="container mx-auto px-4 py-8">
+<!-- Filter Section -->
+<div class="bg-white p-4 rounded shadow-sm mb-6">
+<div class="flex flex-wrap gap-4">
+<div class="w-full md:w-auto flex-1">
+<label class="block text-sm font-medium text-gray-700 mb-1">Category</label>
+<div class="relative">
+<div class="border border-gray-300 rounded p-2 flex items-center justify-between cursor-pointer">
+<span class="text-gray-600">All Categories</span>
+<span class="w-5 h-5 flex items-center justify-center text-gray-400">
+<i class="ri-arrow-down-s-line"></i>
+</span>
+</div>
+</div>
+</div>
+<div class="w-full md:w-auto flex-1">
+<label class="block text-sm font-medium text-gray-700 mb-1">Location</label>
+<div class="relative">
+<div class="border border-gray-300 rounded p-2 flex items-center justify-between cursor-pointer">
+<span class="text-gray-600">All Locations</span>
+<span class="w-5 h-5 flex items-center justify-center text-gray-400">
+<i class="ri-arrow-down-s-line"></i>
+</span>
+</div>
+</div>
+</div>
+<div class="w-full md:w-auto flex-1">
+<label class="block text-sm font-medium text-gray-700 mb-1">Job Type</label>
+<div class="relative">
+<div class="border border-gray-300 rounded p-2 flex items-center justify-between cursor-pointer">
+<span class="text-gray-600">All Types</span>
+<span class="w-5 h-5 flex items-center justify-center text-gray-400">
+<i class="ri-arrow-down-s-line"></i>
+</span>
+</div>
+</div>
+</div>
+<div class="w-full md:w-auto flex items-end">
+<button class="bg-primary text-white px-4 py-2 rounded-button font-medium hover:bg-primary/90 h-10 whitespace-nowrap">
+<span class="flex items-center">
+<i class="ri-filter-3-line mr-2"></i>
+Apply Filters
+</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Content Tabs -->
+<div class="mb-6">
+<div class="bg-white rounded-t-lg border-b border-gray-200">
+<div class="flex overflow-x-auto">
+<button class="px-6 py-3 text-primary border-b-2 border-primary font-medium whitespace-nowrap">Latest Jobs</button>
+<button class="px-6 py-3 text-gray-500 hover:text-gray-700 whitespace-nowrap">Educational Resources</button>
+<button class="px-6 py-3 text-gray-500 hover:text-gray-700 whitespace-nowrap">Career Tips</button>
+<button class="px-6 py-3 text-gray-500 hover:text-gray-700 whitespace-nowrap">School Books</button>
+</div>
+</div>
+</div>
+<!-- Job Listings -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Featured Job Card -->
+<div class="bg-white rounded shadow-sm border-l-4 border-primary overflow-hidden">
+<div class="bg-yellow-50 px-4 py-1 text-xs font-medium text-yellow-800 flex items-center">
+<i class="ri-star-fill mr-1"></i> Featured
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-3">
+<div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mr-3">
+<i class="ri-building-4-line text-gray-500 text-xl"></i>
+</div>
+<span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Full Time</span>
+</div>
+<h3 class="text-lg font-semibold mb-1">Senior Mathematics Teacher</h3>
+<p class="text-gray-600 text-sm mb-3">International School of Excellence</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded-full flex items-center">
+<i class="ri-map-pin-line mr-1"></i> Lilongwe
+</span>
+<span class="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded-full flex items-center">
+<i class="ri-money-dollar-circle-line mr-1"></i> $1,200 - $1,800
+</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-gray-500 text-xs">Posted 2 days ago</span>
+<button class="bg-primary text-white px-3 py-1 rounded-button text-sm hover:bg-primary/90 whitespace-nowrap">Apply Now</button>
+</div>
+</div>
+</div>
+<!-- Regular Job Card -->
+<div class="bg-white rounded shadow-sm overflow-hidden">
+<div class="p-4">
+<div class="flex justify-between items-start mb-3">
+<div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mr-3">
+<i class="ri-hospital-line text-gray-500 text-xl"></i>
+</div>
+<span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">Part Time</span>
+</div>
+<h3 class="text-lg font-semibold mb-1">Biology Curriculum Developer</h3>
+<p class="text-gray-600 text-sm mb-3">National Education Board</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded-full flex items-center">
+<i class="ri-map-pin-line mr-1"></i> Blantyre
+</span>
+<span class="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded-full flex items-center">
+<i class="ri-money-dollar-circle-line mr-1"></i> $800 - $1,200
+</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-gray-500 text-xs">Posted 3 days ago</span>
+<button class="bg-primary text-white px-3 py-1 rounded-button text-sm hover:bg-primary/90 whitespace-nowrap">Apply Now</button>
+</div>
+</div>
+</div>
+<!-- Regular Job Card -->
+<div class="bg-white rounded shadow-sm overflow-hidden">
+<div class="p-4">
+<div class="flex justify-between items-start mb-3">
+<div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mr-3">
+<i class="ri-government-line text-gray-500 text-xl"></i>
+</div>
+<span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full">Contract</span>
+</div>
+<h3 class="text-lg font-semibold mb-1">Educational Content Writer</h3>
+<p class="text-gray-600 text-sm mb-3">Ministry of Education</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded-full flex items-center">
+<i class="ri-map-pin-line mr-1"></i> Zomba
+</span>
+<span class="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded-full flex items-center">
+<i class="ri-money-dollar-circle-line mr-1"></i> $900 - $1,400
+</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-gray-500 text-xs">Posted 5 days ago</span>
+<button class="bg-primary text-white px-3 py-1 rounded-button text-sm hover:bg-primary/90 whitespace-nowrap">Apply Now</button>
+</div>
+</div>
+</div>
+<!-- Regular Job Card -->
+<div class="bg-white rounded shadow-sm overflow-hidden">
+<div class="p-4">
+<div class="flex justify-between items-start mb-3">
+<div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mr-3">
+<i class="ri-school-line text-gray-500 text-xl"></i>
+</div>
+<span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Full Time</span>
+</div>
+<h3 class="text-lg font-semibold mb-1">Physics Teacher</h3>
+<p class="text-gray-600 text-sm mb-3">Mzuzu Academy</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded-full flex items-center">
+<i class="ri-map-pin-line mr-1"></i> Mzuzu
+</span>
+<span class="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded-full flex items-center">
+<i class="ri-money-dollar-circle-line mr-1"></i> $1,000 - $1,500
+</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-gray-500 text-xs">Posted 1 week ago</span>
+<button class="bg-primary text-white px-3 py-1 rounded-button text-sm hover:bg-primary/90 whitespace-nowrap">Apply Now</button>
+</div>
+</div>
+</div>
+<!-- Regular Job Card -->
+<div class="bg-white rounded shadow-sm overflow-hidden">
+<div class="p-4">
+<div class="flex justify-between items-start mb-3">
+<div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mr-3">
+<i class="ri-book-line text-gray-500 text-xl"></i>
+</div>
+<span class="bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded-full">Internship</span>
+</div>
+<h3 class="text-lg font-semibold mb-1">Curriculum Research Assistant</h3>
+<p class="text-gray-600 text-sm mb-3">Educational Research Institute</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded-full flex items-center">
+<i class="ri-map-pin-line mr-1"></i> Lilongwe
+</span>
+<span class="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded-full flex items-center">
+<i class="ri-money-dollar-circle-line mr-1"></i> $400 - $600
+</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-gray-500 text-xs">Posted 1 week ago</span>
+<button class="bg-primary text-white px-3 py-1 rounded-button text-sm hover:bg-primary/90 whitespace-nowrap">Apply Now</button>
+</div>
+</div>
+</div>
+<!-- Regular Job Card -->
+<div class="bg-white rounded shadow-sm overflow-hidden">
+<div class="p-4">
+<div class="flex justify-between items-start mb-3">
+<div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mr-3">
+<i class="ri-computer-line text-gray-500 text-xl"></i>
+</div>
+<span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Full Time</span>
+</div>
+<h3 class="text-lg font-semibold mb-1">Computer Science Instructor</h3>
+<p class="text-gray-600 text-sm mb-3">Malawi University of Science</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded-full flex items-center">
+<i class="ri-map-pin-line mr-1"></i> Thyolo
+</span>
+<span class="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded-full flex items-center">
+<i class="ri-money-dollar-circle-line mr-1"></i> $1,500 - $2,000
+</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-gray-500 text-xs">Posted 2 weeks ago</span>
+<button class="bg-primary text-white px-3 py-1 rounded-button text-sm hover:bg-primary/90 whitespace-nowrap">Apply Now</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Load More Button -->
+<div class="mt-8 text-center">
+<button class="bg-white text-primary border border-primary px-6 py-2 rounded-button font-medium hover:bg-primary/5 whitespace-nowrap">
+<span class="flex items-center justify-center">
+<i class="ri-refresh-line mr-2"></i>
+Load More Jobs
+</span>
+</button>
+</div>
+<!-- Educational Resources Section -->
+<section class="mt-12 hidden" id="educationalResourcesSection">
+<div class="flex justify-between items-center mb-6">
+<h2 class="text-2xl font-bold text-gray-800">Educational Resources</h2>
+<a href="#" class="text-primary hover:text-primary/80 font-medium flex items-center">
+View All
+<span class="w-5 h-5 ml-1 flex items-center justify-center">
+<i class="ri-arrow-right-line"></i>
+</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Resource Card -->
+<div class="bg-white rounded shadow-sm overflow-hidden">
+<div class="h-40 bg-gray-200 relative">
+<img src="https://readdy.ai/api/search-image?query=Stack%2520of%2520textbooks%2520with%2520mathematics%2520formulas%2520and%2520diagrams%2520visible%2520on%2520open%2520pages%252C%2520with%2520a%2520calculator%2520and%2520pencils%2520nearby%252C%2520clean%2520educational%2520setting%2520with%2520soft%2520natural%2520lighting&width=300&height=160&seq=123457&orientation=landscape" alt="Mathematics Resources" class="w-full h-full object-cover object-top">
+<div class="absolute top-2 right-2 bg-primary text-white text-xs px-2 py-1 rounded">
+Mathematics
+</div>
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold mb-2">Secondary School Mathematics</h3>
+<p class="text-gray-600 text-sm mb-3">Complete set of Form 1-4 mathematics textbooks and practice materials.</p>
+<button class="w-full bg-gray-100 text-gray-700 px-4 py-2 rounded-button text-sm font-medium hover:bg-gray-200 whitespace-nowrap">
+<span class="flex items-center justify-center">
+<i class="ri-download-line mr-2"></i>
+Download Resources
+</span>
+</button>
+</div>
+</div>
+<!-- Resource Card -->
+<div class="bg-white rounded shadow-sm overflow-hidden">
+<div class="h-40 bg-gray-200 relative">
+<img src="https://readdy.ai/api/search-image?query=Science%2520laboratory%2520equipment%2520including%2520microscopes%252C%2520test%2520tubes%252C%2520and%2520biology%2520specimens%2520arranged%2520neatly%2520on%2520a%2520lab%2520table%2520with%2520biology%2520textbooks%2520open%2520nearby%252C%2520educational%2520setting&width=300&height=160&seq=123458&orientation=landscape" alt="Biology Resources" class="w-full h-full object-cover object-top">
+<div class="absolute top-2 right-2 bg-secondary text-white text-xs px-2 py-1 rounded">
+Biology
+</div>
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold mb-2">Biology Study Materials</h3>
+<p class="text-gray-600 text-sm mb-3">Comprehensive biology resources including diagrams, notes, and practice questions.</p>
+<button class="w-full bg-gray-100 text-gray-700 px-4 py-2 rounded-button text-sm font-medium hover:bg-gray-200 whitespace-nowrap">
+<span class="flex items-center justify-center">
+<i class="ri-download-line mr-2"></i>
+Download Resources
+</span>
+</button>
+</div>
+</div>
+<!-- Resource Card -->
+<div class="bg-white rounded shadow-sm overflow-hidden">
+<div class="h-40 bg-gray-200 relative">
+<img src="https://readdy.ai/api/search-image?query=English%2520literature%2520books%2520stacked%2520with%2520bookmarks%252C%2520notebook%2520with%2520essay%2520writing%2520tips%252C%2520and%2520grammar%2520reference%2520guides%2520on%2520a%2520wooden%2520desk%2520with%2520soft%2520lighting&width=300&height=160&seq=123459&orientation=landscape" alt="English Resources" class="w-full h-full object-cover object-top">
+<div class="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
+English
+</div>
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold mb-2">English Language & Literature</h3>
+<p class="text-gray-600 text-sm mb-3">Grammar guides, literature analysis, and essay writing resources for students.</p>
+<button class="w-full bg-gray-100 text-gray-700 px-4 py-2 rounded-button text-sm font-medium hover:bg-gray-200 whitespace-nowrap">
+<span class="flex items-center justify-center">
+<i class="ri-download-line mr-2"></i>
+Download Resources
+</span>
+</button>
+</div>
+</div>
+<!-- Resource Card -->
+<div class="bg-white rounded shadow-sm overflow-hidden">
+<div class="h-40 bg-gray-200 relative">
+<img src="https://readdy.ai/api/search-image?query=Physics%2520textbooks%2520with%2520diagrams%2520of%2520circuits%2520and%2520mechanics%2520formulas%252C%2520alongside%2520simple%2520experimental%2520equipment%2520like%2520pulleys%2520and%2520springs%252C%2520educational%2520setting%2520with%2520clean%2520background&width=300&height=160&seq=123460&orientation=landscape" alt="Physics Resources" class="w-full h-full object-cover object-top">
+<div class="absolute top-2 right-2 bg-purple-600 text-white text-xs px-2 py-1 rounded">
+Physics
+</div>
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold mb-2">Physics Study Guide</h3>
+<p class="text-gray-600 text-sm mb-3">Comprehensive physics materials with formulas, problem-solving techniques, and examples.</p>
+<button class="w-full bg-gray-100 text-gray-700 px-4 py-2 rounded-button text-sm font-medium hover:bg-gray-200 whitespace-nowrap">
+<span class="flex items-center justify-center">
+<i class="ri-download-line mr-2"></i>
+Download Resources
+</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Career Guidance Section -->
+<section class="mt-12">
+<div class="flex justify-between items-center mb-6">
+<h2 class="text-2xl font-bold text-gray-800">Career Guidance</h2>
+<a href="#" class="text-primary hover:text-primary/80 font-medium flex items-center">
+View All
+<span class="w-5 h-5 ml-1 flex items-center justify-center">
+<i class="ri-arrow-right-line"></i>
+</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Guidance Card -->
+<div class="bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-200">
+<img src="https://readdy.ai/api/search-image?query=Professional%2520resume%2520and%2520cover%2520letter%2520documents%2520laid%2520out%2520on%2520a%2520desk%2520with%2520a%2520pen%2520and%2520notebook%252C%2520clean%2520workspace%2520with%2520soft%2520lighting%252C%2520career%2520preparation%2520theme&width=400&height=192&seq=123461&orientation=landscape" alt="Resume Writing" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold mb-2">Resume Writing Workshop</h3>
+<p class="text-gray-600 text-sm mb-4">Learn how to create a compelling resume that stands out to employers in the education sector.</p>
+<div class="flex items-center text-gray-500 text-sm">
+<span class="w-5 h-5 flex items-center justify-center mr-1">
+<i class="ri-time-line"></i>
+</span>
+June 15, 2025 | 10:00 AM
+</div>
+</div>
+</div>
+<!-- Guidance Card -->
+<div class="bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-200">
+<img src="https://readdy.ai/api/search-image?query=Professional%2520interview%2520setting%2520with%2520two%2520people%2520sitting%2520across%2520a%2520desk%2520in%2520conversation%252C%2520notepad%2520and%2520documents%2520visible%252C%2520modern%2520office%2520environment%2520with%2520soft%2520lighting&width=400&height=192&seq=123462&orientation=landscape" alt="Interview Tips" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold mb-2">Interview Skills for Educators</h3>
+<p class="text-gray-600 text-sm mb-4">Master the art of interviewing with specific techniques for teaching and educational positions.</p>
+<div class="flex items-center text-gray-500 text-sm">
+<span class="w-5 h-5 flex items-center justify-center mr-1">
+<i class="ri-time-line"></i>
+</span>
+June 22, 2025 | 2:00 PM
+</div>
+</div>
+</div>
+<!-- Guidance Card -->
+<div class="bg-white rounded shadow-sm overflow-hidden">
+<div class="h-48 bg-gray-200">
+<img src="https://readdy.ai/api/search-image?query=Career%2520planning%2520materials%2520including%2520charts%252C%2520notebooks%2520with%2520goals%2520written%2520down%252C%2520and%2520career%2520path%2520diagrams%2520on%2520a%2520clean%2520desk%2520with%2520professional%2520lighting&width=400&height=192&seq=123463&orientation=landscape" alt="Career Planning" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold mb-2">Educational Career Pathways</h3>
+<p class="text-gray-600 text-sm mb-4">Explore various career paths in education and learn about advancement opportunities.</p>
+<div class="flex items-center text-gray-500 text-sm">
+<span class="w-5 h-5 flex items-center justify-center mr-1">
+<i class="ri-time-line"></i>
+</span>
+June 29, 2025 | 11:00 AM
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter Section -->
+<section class="mt-12 bg-primary/10 rounded-lg p-8">
+<div class="max-w-3xl mx-auto text-center">
+<h2 class="text-2xl font-bold text-gray-800 mb-3">Stay Updated with New Opportunities</h2>
+<p class="text-gray-600 mb-6">Subscribe to our newsletter to receive the latest job listings, educational resources, and career advice.</p>
+<div class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
+<input type="email" placeholder="Enter your email address" class="flex-1 px-4 py-3 rounded-button border-none ring-1 ring-gray-300 focus:ring-primary focus:outline-none">
+<button class="bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-primary/90 whitespace-nowrap">
+Subscribe
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Floating Social Media Bar -->
+<div class="fixed right-0 top-1/2 transform -translate-y-1/2 bg-white shadow-lg rounded-l-lg z-20">
+<div class="flex flex-col p-2">
+<a href="https://whatsapp.com/channel/0029Vau1AdBAYlULN2WqYK24" class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary mb-2">
+<i class="ri-whatsapp-line text-xl"></i>
+</a>
+<a href="https://www.linkedin.com/groups/10046899" class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary mb-2">
+<i class="ri-linkedin-line text-xl"></i>
+</a>
+<a href="https://www.facebook.com/profile.php?id=61567494475651" class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary">
+<i class="ri-facebook-line text-xl"></i>
+</a>
+</div>
+</div>
+<!-- Footer -->
+<footer class="bg-gray-800 text-white pt-12 pb-6">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+<div>
+<h3 class="text-xl font-['Pacifico'] mb-4">Daily Vacancies</h3>
+<p class="text-gray-400 mb-4">Your comprehensive platform for educational resources, job opportunities, and career guidance in Malawi.</p>
+<div class="flex space-x-4">
+<a href="https://whatsapp.com/channel/0029Vau1AdBAYlULN2WqYK24" class="w-8 h-8 flex items-center justify-center bg-gray-700 rounded-full hover:bg-primary transition">
+<i class="ri-whatsapp-line"></i>
+</a>
+<a href="https://www.linkedin.com/groups/10046899" class="w-8 h-8 flex items-center justify-center bg-gray-700 rounded-full hover:bg-primary transition">
+<i class="ri-linkedin-line"></i>
+</a>
+<a href="https://www.facebook.com/profile.php?id=61567494475651" class="w-8 h-8 flex items-center justify-center bg-gray-700 rounded-full hover:bg-primary transition">
+<i class="ri-facebook-line"></i>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">Jobs</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">Educational Resources</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">Career Guidance</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">School Books</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Resources</h4>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-400 hover:text-white">CV Templates</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">Interview Tips</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">Career Development</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">Study Materials</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">Post a Job</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+<ul class="space-y-2">
+<li class="flex items-start">
+<span class="w-5 h-5 flex items-center justify-center mr-2 mt-0.5">
+<i class="ri-map-pin-line"></i>
+</span>
+<span class="text-gray-400">Lilongwe, Old Town, Malawi</span>
+</li>
+<li class="flex items-start">
+<span class="w-5 h-5 flex items-center justify-center mr-2 mt-0.5">
+<i class="ri-mail-line"></i>
+</span>
+<span class="text-gray-400">mnludzzy@gmail.com</span>
+</li>
+<li class="flex items-start">
+<span class="w-5 h-5 flex items-center justify-center mr-2 mt-0.5">
+<i class="ri-phone-line"></i>
+</span>
+<span class="text-gray-400">+265 880 122 347</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-700 pt-6 mt-6">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Daily Vacancies. All rights reserved.</p>
+<div class="flex space-x-4">
+<a href="#" class="text-gray-400 hover:text-white text-sm">Privacy Policy</a>
+<a href="#" class="text-gray-400 hover:text-white text-sm">Terms of Service</a>
+<a href="#" class="text-gray-400 hover:text-white text-sm">Cookie Policy</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script id="dropdownScript">
+document.addEventListener('DOMContentLoaded', function() {
+const dropdowns = document.querySelectorAll('.relative');
+dropdowns.forEach(dropdown => {
+const trigger = dropdown.querySelector('.cursor-pointer');
+if (trigger) {
+trigger.addEventListener('click', function() {
+// Dropdown functionality would be implemented here
+console.log('Dropdown clicked');
+});
+}
+});
+});
+</script>
+<script id="tabsScript">
+document.addEventListener('DOMContentLoaded', function() {
+const tabButtons = document.querySelectorAll('.bg-white.rounded-t-lg.border-b button');
+const educationalResourcesSection = document.getElementById('educationalResourcesSection');
+const jobListingsSection = document.querySelector('.grid.grid-cols-1.md\\:grid-cols-2.lg\\:grid-cols-3.gap-6');
+tabButtons.forEach(button => {
+button.addEventListener('click', function() {
+// Remove active class from all tabs
+tabButtons.forEach(btn => {
+btn.classList.remove('text-primary', 'border-b-2', 'border-primary');
+btn.classList.add('text-gray-500');
+});
+// Add active class to clicked tab
+this.classList.remove('text-gray-500');
+this.classList.add('text-primary', 'border-b-2', 'border-primary');
+// Show/hide sections based on selected tab
+if (this.textContent.trim() === 'Educational Resources') {
+educationalResourcesSection.classList.remove('hidden');
+jobListingsSection.classList.add('hidden');
+} else if (this.textContent.trim() === 'Latest Jobs') {
+educationalResourcesSection.classList.add('hidden');
+jobListingsSection.classList.remove('hidden');
+} else {
+educationalResourcesSection.classList.add('hidden');
+jobListingsSection.classList.add('hidden');
+}
+});
+});
+// Initially hide educational resources section
+educationalResourcesSection.classList.add('hidden');
+});
+</script>
+<script id="sponsorScript">
+document.addEventListener('DOMContentLoaded', function() {
+const sponsorBtn = document.getElementById('sponsorBtn');
+if (sponsorBtn) {
+sponsorBtn.addEventListener('click', function() {
+const modal = document.createElement('div');
+modal.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50';
+modal.innerHTML = `
+<div class="bg-white rounded-lg p-6 max-w-md w-full mx-4">
+<div class="flex justify-between items-center mb-4">
+<h3 class="text-xl font-semibold text-gray-900">Support Daily Vacancies</h3>
+<button class="text-gray-400 hover:text-gray-500" onclick="this.closest('.fixed').remove()">
+<i class="ri-close-line text-xl"></i>
+</button>
+</div>
+<div class="space-y-4">
+<div class="bg-gray-50 p-4 rounded">
+<div class="font-medium text-gray-700 mb-2">First Capital Bank</div>
+<div class="text-gray-600 text-sm space-y-1">
+<div>Account Number: 0026503031817</div>
+<div>Account Name: Louis Belenado</div>
+</div>
+</div>
+<div class="bg-gray-50 p-4 rounded">
+<div class="font-medium text-gray-700 mb-2">Airtel Money</div>
+<div class="text-gray-600 text-sm space-y-1">
+<div>Number: +265 998 089 429</div>
+<div>Name: Belenado Chikalenda</div>
+</div>
+</div>
+<div class="bg-gray-50 p-4 rounded">
+<div class="font-medium text-gray-700 mb-2">TNM Mpamba</div>
+<div class="text-gray-600 text-sm space-y-1">
+<div>Number: +265 880 122 347</div>
+<div>Name: Louis Bernado</div>
+</div>
+</div>
+<p class="text-sm text-gray-500 mt-4">Thank you for supporting our platform. Your contribution helps us maintain and improve our services.</p>
+</div>
+</div>
+`;
+document.body.appendChild(modal);
+});
+}
+});
+</script>
+</body>
+</html>
